@@ -33,7 +33,8 @@ FROM dsv1069.users LEFT JOIN dsv1069.orders
 ON users.id = orders.user_id
 GROUP BY users.id;
 
--- 7 
+-- 7 -- have found the percentage of users viewed user profile from total users as I understood from the problem statement
+-- this query does not match with the solution provided in course
 SELECT 100 * (
   SELECT COUNT(DISTINCT users.id) 
   FROM dsv1069.users JOIN dsv1069.events 
